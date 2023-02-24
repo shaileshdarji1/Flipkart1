@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 56px;
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.logo {
+    display: block;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.logo img {
+    height: 1.257rem;
+    width: 4.688rem;
+    display: block;
+}
+
+.logo a {
+    display: block;
+    text-decoration: none;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bolder;
+    color: #f0f0f0;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+
+}
+
+.logo a::after {
+    width: 0.625rem;
+    height: 0.625rem;
+    background-image: url("images/header/logo/asset 1.png");
+    background-size: 0.625rem 0.625rem;
+    display: inline-block;
+    content: "";
+}
+
+.search {
+    display: flex;
+    margin: 10px;
+    
+}
+
+.search button {
+    background-color: #ffffff;
+    border: none;
+    width: 42px;
+    height: 36px;
+    padding: 4px 12px 0 8px;
+    cursor: pointer;
+    border-radius: 0px 2px 2px 0px;
+    outline: none;
+
+}
+
+.search input {
+    
+    height: 36px;
+    width: 476px;
+    border: none;
+    padding: 0px 16px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 2px 0px 0px 2px;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.07), -7px -7px 10px rgba(0, 0, 0, 0.07);
+}
+button:focus {
+    outline: none;
+}
+.loginBtn{
+    color: #2874f0;
+    background-color: #ffffff;
+    padding: 5px 40px;
+  outline: none;
+   height: 31px;
+   margin-left: 150px;
+   margin-top: 13px;
+   border: 1px solid #dbdbdb;
+   border-radius: 2px;
+   font-weight: 600;
+   font-size: 16px;
+   letter-spacing: 0.1px;
+   
+}
+
+/************************************************************Login Button Hover*************************************************************************************/
+
+
+.HoverLogin{
+    position: absolute;
+    top: 61px;
+    height: 350px;
+    width: 250px;
+    background-color: #ffffff;
+    margin-left: -100px;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 10px red;
+   
+}
+.triangle-up{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    top: -10px;
+   
+}    
+
+.Navlink1{
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-top: 18px;
+    margin-left: 40px;
+    
+}
+.Navlink1:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.angledownIcon:hover i{
+    transition: 0.1s;
+    transform: rotate(-180deg);
+    color: #ffffff;
+}
+
+.Newuser{
+    
+}
