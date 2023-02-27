@@ -5,6 +5,8 @@ body {
     box-sizing: border-box;
 }
 
+
+/*===============================================================Hearder Section Start================================================================================*/
 .header {
     height: 56px;
     background-color: #2874f0;
@@ -80,6 +82,42 @@ body {
 button:focus {
     outline: none;
 }
+
+/*-------------------------------------------------------Recent Search--------------------------------------------------------------------------------------*/
+.RecentSearch{
+    display: none;
+    position: absolute;
+    top: 46px;
+    background-color: white;
+    padding: 8px 16px;
+    width: 518px;
+    height: 360px;
+    box-shadow:-5px 5px 7px rgba(0,0,0,0.2), 
+    5px 5px 10px rgba(0,0,0,0.2);
+    border-top: 1px solid #ccc;
+}
+.RecentSearch-List{
+    display: flex;
+    font-size: 15px;
+   
+}
+.RecentSearch-List i{
+    color: rgb(121, 115, 115);
+    font-size: 18px;
+}
+.RecentSearch-List p{
+    padding-left:15px;
+    margin-top: -3px;
+}
+
+.DiscoverMore{
+  padding-left:16px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: rgb(121, 115, 115);
+  margin-top: -3px;
+}
 .loginBtn{
     color: #2874f0;
     background-color: #ffffff;
@@ -93,23 +131,35 @@ button:focus {
    font-weight: 600;
    font-size: 16px;
    letter-spacing: 0.1px;
+   cursor: pointer;
    
 }
 
-/************************************************************Login Button Hover*************************************************************************************/
+.search:focus-within .RecentSearch{
+    display: block;
+}
+
+
+/*-------------------------------------------------------------Login Button Hover------------------------------------------------------------------------------------*/
 
 
 .HoverLogin{
     position: absolute;
     top: 61px;
-    height: 350px;
+    height: 385px;
     width: 250px;
     background-color: #ffffff;
     margin-left: -100px;
     margin-top: -5px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 5px 5px 10px red;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
    
 }
 .triangle-up{
@@ -118,10 +168,42 @@ button:focus {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #ffffff;
-    top: -10px;
+    border-bottom: 12px solid #ffffff;
+    top: -20px;
    
+}
+.Newuser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.Newuser a{
+    color: #2874f0;
 }    
+.loginMenu{
+    width: 250px;
+    
+}
+.menuList{
+    padding-left: 10px;
+    display: flex;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menuList p{
+    margin-top: -3px;
+    padding-left: 10px;
+}
+.menuList i{
+    color: #2874f0;
+}
+.loginBtn:hover .HoverLogin{
+    display: flex;
+}
+.triangle-up:hover .HoverLogin{
+    display: flex;
+}
 
 .Navlink1{
     font-size: 16px;
@@ -129,7 +211,7 @@ button:focus {
     color: #ffffff;
     font-weight: bolder;
     text-decoration: none;
-    padding-top: 18px;
+    padding-top: 20px;
     margin-left: 40px;
     
 }
@@ -137,13 +219,61 @@ button:focus {
     color: #ffffff;
     text-decoration: none;
 }
+.Navlink1 img{
+    margin-top: -3px;
+    margin-right: 5px;
+}
 
-.angledownIcon:hover i{
+/*-------------------------------------------------------------------------More hover---------------------------------------------------------------------------------*/
+.HoverMore{
+    position: absolute;
+    top: 61px;
+    height: 220px;
+    width: 250px;
+    background-color: #ffffff;
+    margin-left: -100px;
+    margin-top: -5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.2),
+    5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+.triangle-up-more{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    top: -20px;
+}
+.moreMenu{
+    width: 250px;
+}
+.moreList{
+    padding-left: 10px;
+    display: flex;
+    
+}
+.moreList p{
+    margin-top: -3px;
+    padding-left: 10px;
+}
+.moreList i{
+    color: #2874f0;
+}
+.angledownIcon:hover .down{
     transition: 0.1s;
     transform: rotate(-180deg);
     color: #ffffff;
 }
-
-.Newuser{
-    
+.angledownIcon:hover .HoverMore{
+    display: flex;
 }
+
+/*==========================================================================Navbar Start===========================================================================*/
