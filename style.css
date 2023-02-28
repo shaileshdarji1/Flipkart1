@@ -4,11 +4,11 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     box-sizing: border-box;
     background-color: #f1f3f6;
-    
+
 }
 
 
-/*===============================================================Hearder Section Start================================================================================*/
+/*--Hearder Section Start--*/
 .header {
     height: 56px;
     background-color: #2874f0;
@@ -52,12 +52,20 @@ body {
     content: "";
 }
 
+.plus-logo {
+    color: #ffe500;
+    font-weight: bolder;
+    margin-right: 2px;
+}
+
 .search {
     display: flex;
     margin: 10px;
 
 }
-
+.search:focus-within .RecentSearch {
+    display: block;
+}
 .search button {
     background-color: #ffffff;
     border: none;
@@ -86,7 +94,6 @@ button:focus {
     outline: none;
 }
 
-/*-------------------------------------------------------Recent Search--------------------------------------------------------------------------------------*/
 .RecentSearch {
     display: none;
     position: absolute;
@@ -144,13 +151,10 @@ button:focus {
     cursor: pointer;
 
 }
-
-.search:focus-within .RecentSearch {
-    display: block;
+.loginBtn:hover .HoverLogin {
+    display: flex;
 }
 
-
-/*-------------------------------------------------------------Login Button Hover------------------------------------------------------------------------------------*/
 
 
 .HoverLogin {
@@ -173,7 +177,7 @@ button:focus {
     z-index: 2;
 }
 
-.triangle-up {
+.triangle-up-login {
     position: relative;
     width: 0;
     height: 0;
@@ -182,6 +186,9 @@ button:focus {
     border-bottom: 12px solid #ffffff;
     top: -20px;
 
+}
+.triangle-up-login:hover .HoverLogin {
+    display: flex;
 }
 
 .Newuser {
@@ -220,15 +227,7 @@ button:focus {
     background-color: #f0f0f0;
 }
 
-.loginBtn:hover .HoverLogin {
-    display: flex;
-}
-
-.triangle-up:hover .HoverLogin {
-    display: flex;
-}
-
-.Navlink1 {
+.Navlink {
     font-size: 16px;
     letter-spacing: 0.1px;
     color: #ffffff;
@@ -239,17 +238,16 @@ button:focus {
 
 }
 
-.Navlink1:hover {
+.Navlink:hover {
     color: #ffffff;
     text-decoration: none;
 }
 
-.Navlink1 img {
+.Navlink img {
     margin-top: -3px;
     margin-right: 5px;
 }
 
-/*-------------------------------------------------------------------------More hover---------------------------------------------------------------------------------*/
 .HoverMore {
     position: absolute;
     top: 61px;
@@ -315,7 +313,7 @@ button:focus {
     display: flex;
 }
 
-/*==========================================================================Navbar Start===========================================================================*/
+/*--Navbar --*/
 nav {
     display: flex;
     justify-content: center;
@@ -352,8 +350,8 @@ nav {
 
 
 
-/*====================================================================Section 1 Start ===============================================================================*/
-.slider {
+/*--Section 1 Start --*/
+.section-1 {
     z-index: 1;
     background-color: #ffffff;
     margin-top: 10px;
@@ -364,7 +362,7 @@ nav {
     margin-left: 100px;
 }
 
-.secheading {
+.section-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -372,19 +370,23 @@ nav {
     margin: 5px;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
 }
-.dealoftheday{
+
+.dealoftheday {
     display: flex;
 }
-.dealoftheday i{
+
+.dealoftheday i {
     margin: 8px;
 }
-.dealoftheday p{
+
+.dealoftheday p {
     margin-left: 5px;
     margin-top: 5px;
     color: rgb(131, 130, 130);
 }
-.scroll {
-    display: flex;  
+
+.scrollbar{
+    display: flex;
     overflow: hidden;
     height: 100%;
 
@@ -395,9 +397,11 @@ nav {
     height: 100%;
     margin: 20px;
 }
-.card-layout:hover img{
+
+.card-layout:hover img {
     transform: scale(102%);
 }
+
 .card-layout img {
     height: 45%;
     width: 200px;
@@ -419,6 +423,7 @@ nav {
 .card-layout .brand {
     font-size: 14px;
     margin-top: -12px;
+    color: rgb(131, 130, 130);
 }
 
 .banner {
@@ -447,8 +452,8 @@ nav {
     border-radius: 4px 0 0 4px;
 }
 
-
-.slider2 {
+/*--Section 2--*/
+.section-2 {
     background-color: #ffffff;
     z-index: 1;
     margin-top: 10px;
@@ -468,12 +473,3 @@ nav {
     font-size: 14px;
     height: 8px;
 }
-
-.subheading2 {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 5px;
-    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
-}
-
