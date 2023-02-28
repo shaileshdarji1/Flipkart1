@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     box-sizing: border-box;
+    background-color:#f1f3f6; 
 }
 
 
@@ -44,7 +45,7 @@ body {
 .logo a::after {
     width: 0.625rem;
     height: 0.625rem;
-    background-image: url("images/header/logo/asset 1.png");
+    background-image: url("images/header/plus.png");
     background-size: 0.625rem 0.625rem;
     display: inline-block;
     content: "";
@@ -281,6 +282,7 @@ nav{
     display: flex;
     justify-content: center;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    background-color: #ffffff;
 }
 
 .nav-item{
@@ -297,7 +299,8 @@ nav{
 
 
 /*====================================================================Section 1 Start ===============================================================================*/
- .slider{
+.slider{
+    background-color: #ffffff;
     z-index: -1;
     margin-top: 10px;
     text-align: center;
@@ -316,7 +319,8 @@ nav{
 }
 .scroll{
   display: flex;
-  flex-wrap: nowrap;
+  overflow: hidden;
+  height: 100%;
   
 }
 .card-layout{
@@ -324,7 +328,7 @@ nav{
     margin: 20px;
 }
 .card-layout img{
-    height: 47%;
+    height: 45%;
     width: 200px;
     margin-bottom: 25px;
 }
@@ -340,7 +344,7 @@ nav{
 }
 .card-layout .brand{
     font-size: 14px;
-    margin-top: -8px;
+    margin-top: -12px;
 }
 .banner{
     display: flex;
@@ -355,6 +359,7 @@ nav{
     5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .slider2{
+    background-color: #ffffff;
     z-index: -1;
     margin-top: 10px;
     text-align: center;
@@ -370,6 +375,7 @@ nav{
   margin-top: -8px;
   color: rgb(139, 132, 132);
   font-size: 14px;
+  height: 8px;
 }
 .subheading2{
     display: flex;
